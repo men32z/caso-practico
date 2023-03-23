@@ -2,6 +2,10 @@
 
 > Schoolar project.
 
+## Live Version
+
+[here](https://caso.preza.dev/)
+
 ## Built With
 
 - Laravel
@@ -38,13 +42,25 @@ cp .env.example .env
 php artisan key:generate
 ```
 
-3. Install dependencies
+4. Install dependencies
 ```
 composer install
 npm install
 ```
 
-4. run server
+5. Migrate and seed 
+```
+php artisan migrate --seed
+```
+6. Configure your database on the env file.
+```
+DB_HOST=********
+DB_PORT=********
+DB_DATABASE=********
+DB_USERNAME=********
+DB_PASSWORD=********
+```
+7. run server
 
 ```
 php artisan serve
